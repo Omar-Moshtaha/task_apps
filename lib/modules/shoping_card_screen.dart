@@ -28,7 +28,9 @@ class _ShopingCardScreenState extends State<ShopingCardScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
+      body:
+      
+      Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: SingleChildScrollView(
           child: Column(
@@ -57,7 +59,8 @@ class _ShopingCardScreenState extends State<ShopingCardScreen> {
                 ), separatorBuilder: (context,index)=>const SizedBox(width: 60,), itemCount: items.length),
               ),
               const SizedBox(height: 30,),
-              GridView.count(childAspectRatio: 1/1.5,crossAxisSpacing: 10,mainAxisSpacing: 10,crossAxisCount: 2,shrinkWrap: true,children: List.generate(10, (index) => Stack(
+              GridView.count(physics: BouncingScrollPhysics(),scrollDirection: Axis.vertical,childAspectRatio: 1/1.5,crossAxisSpacing: 10,mainAxisSpacing: 10,crossAxisCount: 2,shrinkWrap: true,children: List.generate(20, (index) =>
+                  Stack(
                 alignment: Alignment.centerLeft,
                 clipBehavior: Clip.none,
                 children: [
@@ -72,7 +75,7 @@ decoration: BoxDecoration(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
   children: [
-        Container(
+          Container(
       height: 170,
       width: double.infinity,
           decoration: const BoxDecoration(
@@ -81,8 +84,8 @@ decoration: BoxDecoration(
             borderRadius: BorderRadius.only(topRight: Radius.circular(15),topLeft: Radius.circular(15)),
           ),
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 15,vertical: 10),
-        child: Row(
+          padding: const EdgeInsets.symmetric(horizontal: 15,vertical: 10),
+          child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(height: 21,width: 39,decoration: BoxDecoration(
@@ -101,13 +104,13 @@ decoration: BoxDecoration(
           const Spacer(),
 const Icon(Icons.favorite_border_sharp,color: Colors.white,),
           ],
-        ),
+          ),
       ),
     ),
     Padding(
       padding: const EdgeInsets.only(left: 12,top: 30),
       child: Column(crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+          children: [
           Text("wwswssw",style: TextStyle(
             color: Colors.white,
             fontSize: 15,
@@ -128,7 +131,7 @@ const Icon(Icons.favorite_border_sharp,color: Colors.white,),
             ],
           ),
 
-        ],
+          ],
       ),
     ),
 
