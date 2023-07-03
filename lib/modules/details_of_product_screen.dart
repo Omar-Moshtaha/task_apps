@@ -86,7 +86,7 @@ Container(height: 200,width: double.infinity,color:  const Color(0xFF333742),chi
                           Row(
                             children: [
                               const Opacity(opacity: 0.55,child: Icon(Icons.remove_red_eye,color: Colors.white,)),
-                              Spacer(),
+                              const Spacer(),
                               Container(height: 29,width: 53,decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10),
                                   color: const Color(0xFF343743)
@@ -94,10 +94,10 @@ Container(height: 200,width: double.infinity,color:  const Color(0xFF333742),chi
                                 mainAxisAlignment: MainAxisAlignment.center,
 
                                 children: [
-                                  Text("4.6",style: TextStyle(
+                                  const Text("4.6",style: TextStyle(
                                       color:Colors.white
                                   ),),
-                                  Icon(Icons.star_rounded,color: Colors.yellow,size: 18,),
+                                  const Icon(Icons.star_rounded,color: Colors.yellow,size: 18,),
                                 ],
                               )),),
                             ],
@@ -139,7 +139,7 @@ Container(height: 200,width: double.infinity,color:  const Color(0xFF333742),chi
                                 borderRadius: BorderRadius.circular(10),
                                 color: const Color(0xFF343743)
                               ),child: const Center(child: Text("24%",style: TextStyle(
-                                color: Color(0Xff6AED8A)
+                                color: Color(0Xff333742)
                               ),)),),
                             ],
                           ),

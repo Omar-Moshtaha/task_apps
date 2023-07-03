@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shop_app/layout/layout_screen.dart';
 import 'package:shop_app/modules/details_of_product_screen.dart';
 
 void main(){
@@ -21,7 +22,7 @@ theme: ThemeData(
       scaffoldBackgroundColor:  const Color(0xFF333742),
 ),
       debugShowCheckedModeBanner: false,
-      home: DetailsOfProductScreen()
+      home: LayoutScreen()
     );
   }
 }
