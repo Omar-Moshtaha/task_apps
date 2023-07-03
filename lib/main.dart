@@ -1,8 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:shop_app/layout/layout_screen.dart';
-
-import 'modules/details_screen.dart';
+import 'package:shop_app/modules/details_of_product_screen.dart';
 
 void main(){
   runApp(const MyApp());
@@ -14,14 +11,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
 theme: ThemeData(
-  appBarTheme: AppBarTheme(
+  appBarTheme: const AppBarTheme(
     backgroundColor: Color(0xFF333742),
   ),
+      bottomSheetTheme:  BottomSheetThemeData(
+        backgroundColor:Colors.white.withOpacity(0),
+      ),
 
-      scaffoldBackgroundColor:  Color(0xFF333742),
+      scaffoldBackgroundColor:  const Color(0xFF333742),
 ),
       debugShowCheckedModeBanner: false,
-      home: LayoutScreen()
+      home: DetailsOfProductScreen()
     );
   }
 }

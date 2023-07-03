@@ -146,6 +146,7 @@ Container(
                   children: [
                     const Text("\$890.00",style: TextStyle(
                         color: Colors.white,fontWeight: FontWeight.w700,
+
                         fontSize:16
                     ),),
 

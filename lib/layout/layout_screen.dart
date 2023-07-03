@@ -16,7 +16,7 @@ class _LayoutScreenState extends State<LayoutScreen> {
   List<Widget>screen=[
     CategoriesScreen(),
     ShopingCardScreen(),
-    ProfileScreen(),
+    const ProfileScreen(),
 
   ];
 
@@ -40,11 +40,11 @@ void changeIndex(int value){
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(Icons.menu),
-        actions: [
+        leading: const Icon(Icons.menu),
+        actions: const [
 
           Padding(
-            padding: const EdgeInsets.only(right: 20),
+            padding: EdgeInsets.only(right: 20),
             child: Icon(Icons.notification_add_rounded),
           )
         ],
@@ -57,7 +57,7 @@ title: Text("${title[index]}"),
         height: 100,
         clipBehavior: Clip.antiAliasWithSaveLayer,
 
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
 
           borderRadius: BorderRadius.only(
               topLeft: Radius.circular(20),
@@ -67,7 +67,7 @@ title: Text("${title[index]}"),
         ),
         child: GNav(selectedIndex:index ,onTabChange: (value){
 changeIndex(value);
-        },padding: EdgeInsets.all(16),backgroundColor: Color(0xff454D5A),color: Colors.white,activeColor: Colors.white,tabBackgroundColor: Color(0xFF333742),gap: 8,tabs: [
+        },padding: const EdgeInsets.all(16),backgroundColor: const Color(0xff454D5A),color: Colors.white,activeColor: Colors.white,tabBackgroundColor: const Color(0xFF333742),gap: 8,tabs: const [
           GButton(icon: Icons.home,text: "Home",),
           GButton(icon: Icons.shopify,text: "ShopingCard",),
           GButton(icon: Icons.person,text: "Profile",),
