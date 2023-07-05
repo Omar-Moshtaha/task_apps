@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:shop_app/modules/categories_screen.dart';
 import 'package:shop_app/modules/profile_screen.dart';
@@ -40,37 +41,39 @@ void changeIndex(int value){
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const Icon(Icons.menu),
-        actions: const [
+        leading:  Icon(Icons.menu,size: 1.sh/30,),
+        actions:  [
 
           Padding(
-            padding: EdgeInsets.only(right: 20),
-            child: Icon(Icons.notification_add_rounded),
+            padding: EdgeInsets.only(right: 1.sw/30),
+            child: Icon(Icons.notification_add_rounded,size: 1.sh/30,),
           )
         ],
         centerTitle: false,
 elevation: 0,
-title: Text("${title[index]}"),
+title: Text("${title[index]}",style: TextStyle(
+  fontSize: 18.sp
+),),
       ),
       body: screen[index],
       bottomNavigationBar: Container(
-        height: 100,
+        height: 1.sh/7.9,
         clipBehavior: Clip.antiAliasWithSaveLayer,
 
-        decoration: const BoxDecoration(
+        decoration:  BoxDecoration(
 
           borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(20),
-              topRight: Radius.circular(20)
+              topLeft: Radius.circular(20.r),
+              topRight: Radius.circular(20.r)
 
           ),
         ),
         child: GNav(selectedIndex:index ,onTabChange: (value){
 changeIndex(value);
-        },padding: const EdgeInsets.all(16),backgroundColor: const Color(0xff454D5A),color: Colors.white,activeColor: Colors.white,tabBackgroundColor: const Color(0xFF333742),gap: 8,tabs: const [
-          GButton(icon: Icons.home,text: "Home",),
-          GButton(icon: Icons.shopify,text: "ShopingCard",),
-          GButton(icon: Icons.person,text: "Profile",),
+        },padding:  EdgeInsets.all(16.h),backgroundColor: const Color(0xff454D5A),color: Colors.white,activeColor: Colors.white,tabBackgroundColor: const Color(0xFF333742),gap: 8,tabs:  [
+          GButton(icon: Icons.home,text: "Home",textStyle: TextStyle(fontSize: 20.sp,color: Colors.white),iconSize: 1.sh/27.99),
+          GButton(icon: Icons.shopify,text: "ShopingCard",textStyle: TextStyle(fontSize: 20.sp,color: Colors.white),   iconSize:1.sh/27.99),
+          GButton(icon: Icons.person,text: "Profile",   textStyle:TextStyle(fontSize: 20.sp,color: Colors.white),iconSize: 1.sh/27.99),
 
         ]
         ),
