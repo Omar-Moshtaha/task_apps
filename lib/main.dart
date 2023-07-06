@@ -2,9 +2,11 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shop_app/layout/layout_screen.dart';
+
 import 'dart:ui' as ui;
 
 import 'package:shop_app/modules/details_screen.dart';
+
 
 
 void main(){
@@ -17,7 +19,7 @@ void main(){
 double? screenWidth;
 double?screenHeight;
 class MyApp extends StatelessWidget {
-   MyApp({Key? key}) : super(key: key);
+   const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

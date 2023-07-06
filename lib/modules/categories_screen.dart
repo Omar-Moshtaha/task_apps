@@ -39,7 +39,7 @@ void changeValueOfIndex(int value){
       // Calculate the index based on the scroll offset and the item height.
       double itemHeight = 1.2.sw;
       setState(() {
-        currentIndex = (_scrollController.offset / itemHeight).round();
+        currentIndex = (_scrollController.offset / itemHeight).ceil();
         print('Current index: $currentIndex');
 
       });
@@ -88,22 +88,28 @@ body: Padding(
               child: Container(height: 1.sh/18,decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.r),
                 color: const Color(0Xff454D5A),
-              ),child: TextFormField(decoration:  InputDecoration(
-                hintText: "Search Products",
-                contentPadding: EdgeInsets.only(top:  16.h,left: 15.w),
-                hintStyle: TextStyle(
-                  color: Colors.white,
-                  fontSize: 15.sp
+              ),child:
+              Center(
+                child: TextFormField(  textAlign: TextAlign.start,
+            decoration:  InputDecoration(
+                  hintText: "Search Products",
 
-                ),
-                suffixIcon: Padding(
-                  padding:  EdgeInsets.only(top: 5.h,right: 10.w),
-                  child: Icon(Icons.search,size: 1.sh/30,color: Colors.white,),
-                ),
-                border: InputBorder.none,
+                  contentPadding: EdgeInsets.only(top:  3,left: 10.w),
+                  hintStyle: TextStyle(
+
+                    color: Colors.white,
+                    fontSize: 15.sp
+
+                  ),
+                  suffixIcon: Padding(
+                    padding:  EdgeInsets.only(top: 3.h,right: 3.w),
+                    child: Icon(Icons.search,size: 1.sh/30,color: Colors.white,),
+                  ),
+                  border: InputBorder.none,
 
 
-              ),)),
+                ),),
+              )),
             ),
             SizedBox(width: 10.w,),
             Container(height: 1.sh/18,width: 1.sw/9,decoration: BoxDecoration(
@@ -129,7 +135,7 @@ height:1.3.sw,
 
           ),
           child: Padding(
-            padding:  EdgeInsets.only(top: 30.h,left: 30.w,right: 30.w,bottom: 30.h),
+            padding:  EdgeInsets.only(top: 30.h,left: 30.w,right: 30.w,bottom: 10.h),
             child:
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -167,7 +173,7 @@ height:1.3.sw,
                     SizedBox(width: 1.sw/20,),
                     Expanded(
                       child: Container(height: 1.sh/11,decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
+                        borderRadius: BorderRadius.circular(10.r),
                         color: const Color(0Xff707070),
 
                       ),child: Center(

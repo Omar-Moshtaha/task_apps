@@ -44,7 +44,7 @@ class _DetailsOfProductScreenState extends State<DetailsOfProductScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children:  [
 Container(height: 0.15.sh,width: double.infinity,color:   const Color(0xFF333742),child: Padding(
-  padding:  const EdgeInsets.only(top: 10,left: 20),
+  padding:   EdgeInsets.only(top: 10.h,left: 20.w),
   child:   Column(
     crossAxisAlignment: CrossAxisAlignment.start,
 
@@ -63,7 +63,7 @@ Container(height: 0.15.sh,width: double.infinity,color:   const Color(0xFF333742
           ],
         ),
       ),
-       SizedBox(height: 1.sw/22,),
+       SizedBox(height: 1.sw/30,),
 
        Text("PULSE 3D \nWireless Headset",style: TextStyle(color: Colors.white,fontSize: 15.sp,fontWeight: FontWeight.w900),),
 
@@ -75,11 +75,11 @@ Container(height: 0.15.sh,width: double.infinity,color:   const Color(0xFF333742
                 children: [
                   Container(
                     height: 1.sh,
-                    decoration: const BoxDecoration(
+                    decoration:  BoxDecoration(
 
                       color: Color(0xFF454D5A),
 
-                      borderRadius: BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20)),
+                      borderRadius: BorderRadius.only(topLeft: Radius.circular(20.r),topRight: Radius.circular(20.r)),
                     ),
                     child: Padding(
                       padding:  EdgeInsets.only(left: 30.w,right:  30.w,top: 50.h),
@@ -141,7 +141,8 @@ Container(height: 0.15.sh,width: double.infinity,color:   const Color(0xFF333742
                               Container(height: 1.sw/13,width: 1.sw/10,decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10.r),
                                 color: const Color(0xFF343743)
-                              ),child: const Center(child: Text("24%",style: TextStyle(
+                              ),child:  Center(child: Text("24%",style: TextStyle(
+                                fontSize: 12.sp,
                                 color: Color(0Xff6AED8A)
                               ),)),),
                             ],
@@ -178,7 +179,7 @@ Container(height: 0.15.sh,width: double.infinity,color:   const Color(0xFF333742
                             child:   ListView.separated(scrollDirection: Axis.horizontal,shrinkWrap: true,itemBuilder: (context,index)=>Container(
                               width: 1.sw/12,
                               decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
+                                  borderRadius: BorderRadius.circular(10.r),
                                   border: Border.all(color: Colors.white),
 
                                   color:color[index]
@@ -243,7 +244,7 @@ Container(height: 0.15.sh,width: double.infinity,color:   const Color(0xFF333742
               children: [
 
                 Container(height: 1.sh/16,width: 1.sh/16,decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(10.r),
                   color: const Color(0xFF454D5A)
                 ),child:  Icon(Icons.favorite_outline_rounded,color: Colors.white,size: 1.sw/20,),),
                  SizedBox(width: 10.w,),
@@ -254,7 +255,7 @@ Container(height: 0.15.sh,width: double.infinity,color:   const Color(0xFF333742
                   ),child:  Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.card_giftcard,color: Colors.white,size: 4.h,),
+                      Icon(Icons.card_giftcard,color: Colors.white,size: 1.sw/20,),
                       SizedBox(width: 2.w,),
                       Text("ADD TO CART",style: TextStyle(
                         color: Colors.white,

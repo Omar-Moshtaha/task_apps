@@ -91,7 +91,7 @@ SizedBox(
     height:1.sw/10,
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(10.r),
-      border: Border.all(color: Colors.white),
+      border: Border.all(color: Colors.white,width: 2.w),
 
       color:color[index]
     ),
